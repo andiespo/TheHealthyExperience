@@ -1,0 +1,266 @@
+*{
+	margin: 0;
+}
+
+@font-face {
+font-family: 'Roboto';
+src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
+}   
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
+   
+body{
+font-size: 100%;
+}
+
+#titulo{
+color: rgb(126, 74, 39);
+}
+
+.tituloprincipal{
+color:  rgb(173, 136, 65);
+background-color: rgb(238, 189, 115);
+}
+
+.inicio{
+color:rgb(82, 57, 10);    
+font-size: 22px;
+}
+
+ul.sacarBulletEnlaces{
+list-style: none;
+}
+        
+ol{
+list-style: none;
+font-family: Roboto
+}
+
+.textoInformativo{
+color:rgb(173, 136, 65);
+background-color:rgb(252, 237, 210);
+font-size: 90%;
+}
+
+.tabla{
+color:rgb(173, 136, 65);
+font-size: 20px;
+}
+
+#contacto{
+font-size: 15px; 
+font-family: Arial, Helvetica, sans-serif;  
+}
+
+.fondobox{
+background-color:rgb(243, 235, 221);
+}
+
+.items{
+font-size: 20px;
+font-weight: bold;
+text-align: left;
+}   
+
+.titulosecundario{
+color:rgb(117, 91, 41);
+font-size: 30px;
+}
+
+.footer{
+color: rgb(82, 57, 10);
+}
+
+.txtIzquierda{
+font-style: oblique;
+font-family: 'Roboto', sans-serif;
+font-size: 25px;
+}
+    
+.txtDerecha{
+font-weight: bold;
+font-family: 'Roboto', sans-serif;
+font-size: 100%;
+text-align: justify;
+}
+    
+.txtCentro{
+text-align: center;
+text-transform: capitalize;
+line-height: 30px;
+}
+   
+.tituloTable{
+color: rgb(157, 157, 238);
+text-align: center;
+font-size: 50px;
+text-transform: uppercase;
+}
+    
+.parallax {
+    
+/* The image used */
+
+background-image: url("../assets/img/brooke-lark-_v3fy536vpk-unsplash.jpg");
+    
+/* Set a specific height */
+    
+height: 300px;
+    
+/* Create the parallax scrolling effect */
+    
+background-attachment: fixed;
+    
+background-position: center;
+    
+background-repeat: no-repeat;
+    
+background-size: cover;
+
+             
+/* box modeling */
+padding: 50px 30px;
+margin-bottom:50px;
+z-index: 999999999;
+}
+
+
+.Seguinos{
+  font-size: 40px;
+  color: black; 
+  font-family: 'Roboto', sans-serif; 
+  font-weight: 200; 
+  text-align: left;
+  text-transform: uppercase;  
+}
+
+.Subtitulo{
+  font-size:30px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  text-transform: capitalize;
+}
+
+.parrafo {
+  font-size: 20px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: bold;
+  text-align: justify;
+}
+
+.solucionandoOverflow {
+  font-size: 30px;
+  line-height: 40px;
+  background-color: rgb(216, 213, 208);
+  border:1.5px solid black;
+  width: 90px;
+  height: 80px;
+  padding: 8px;
+  overflow: visible;
+}
+
+.tamanioImg {
+  width: 100%;
+}
+
+.encabezadoUbicacion{
+  font-size: 40px;
+  text-align: center;
+  padding: 0px 50px;
+  font-family: 'Roboto', sans-serif;
+  border-top: 3px dashed blueviolet;
+  border-bottom: solid 3px blueviolet;
+  border-left: groove 3px blueviolet;
+  border-right: dashed 3px blueviolet;
+}
+
+header{
+  position: sticky;
+  top: 0px;
+  background-color: rgb(238, 198, 136); 
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 50px;
+}
+
+ul {
+  list-style: none;
+  font-size:0 
+}
+li {
+  display: inline-block;
+  width: 8%;
+  position:relative;
+  font-size: 20px
+}
+ul ul {
+  position: absolute;
+  display: none;
+}
+ul ul li {
+  display: block;
+}
+ul li:hover ul {
+  display:block;
+}
+
+table{
+  margin-bottom: 40px;
+  top: 300px;
+}
+
+
+.publicidad{
+  background-color: rgb(157, 157, 238);
+  position: fixed;
+  top: 200px;
+  color: white;
+  padding: 30px;
+  width: 30%;
+  z-index:+1;
+}
+
+.flexNav{
+	    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    height: 80px;
+    align-content: space-between;
+}
+
+.flexFooter {
+	background-color: rgb(240, 198, 136);
+  color:rgb(143, 112, 55);
+	padding: 50px 20px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
+.flexRRSS {
+	display: flex;
+	flex-direction: column;
+  font-size: 45px;
+  
+}
+.imgRRSS{
+	width: 30%;
+	padding: 10px 0px;
+}
+.icoEmail{
+	order:3;
+}
+.icoWpp{
+	order: 1;
+}
+.icoTel{
+	order: 2;
+}
+
+.contactoFooter {
+	display: flex;
+	flex-direction: column;
+}
