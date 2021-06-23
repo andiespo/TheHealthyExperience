@@ -53,7 +53,6 @@ top: 10px;
 }
 
 
-
   ul ul {
 	position: absolute;
 	display: none;
@@ -68,13 +67,61 @@ top: 10px;
 
 .imgFluid{width:100%;height: auto;}
 
-.footerFlex{display: flex;justify-content: space-around;}
+footer{
+	grid-area: footer;
+}
+.border{
+	border:1px solid black;
+	font-weight: bold;
+	font-size: 12px;
+}
+
+.footerFlex{
+	padding: 30px 5px;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+}
 
 .footerBG{
-		background-image: linear-gradient(to right, rgb(236, 221, 177), rgb(236, 85, 47));
+		background-image: linear-gradient(to right, rgb(240, 234, 217), rgb(235, 160, 142));
 	}
 
-
+	.flexFooter {
+		background-color: rgb(240, 198, 136);
+	    color:rgb(143, 112, 55);
+		padding: 50px 20px;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		justify-content: space-around;
+	}
+	.flexRRSS {
+		display: flex;
+		flex-direction: column;
+	  font-size: 45px;
+	  
+	}
+	.imgRRSS{
+		width: 30%;
+		padding: 10px 0px;
+	}
+	.icoEmail{
+		order:3;
+	}
+	.icoWpp{
+		order: 1;
+	}
+	.icoTel{
+		order: 2;
+	}
+	
+	.contactoFooter {
+		display: flex;
+		flex-direction: column;
+	}
+	
 	.transform{
 		transform: translateX(-50px); 
 		transform: scale(-1,-1);
@@ -149,14 +196,8 @@ section#slider{
 section#texto{
 	grid-area: texto;
 }
-footer{
-	grid-area: footer;
-}
-.border{
-	border:1px solid black;
-	font-weight: bold;
-	font-size: 12px;
-}
+
+
 .ulFlex{
 	display: flex;
 	justify-content: flex-end;
