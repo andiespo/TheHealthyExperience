@@ -1,0 +1,148 @@
+@import "tamanios";
+
+$azul:rgb(101, 101, 138);
+$amarillo:rgb(238, 187, 93);
+$verde:rgb(66, 185, 185);
+$beige:beige;
+
+header {
+	background-color:$amarillo;
+	position: sticky;
+	top: 0px;
+	padding: 30px 30px 10px 30px;
+	margin-bottom: 50px;
+	h3{
+		color:$azul;
+		font-size:$fuentePDesktop;
+		&:hover{
+		color:$verde;}
+	}
+}
+
+   
+section {
+	background-color:$beige;
+	article{
+		font-size:$fuentesection;
+           
+&__seguinos{
+         --letra{
+	font-size: 40px;
+	color: black; 
+	font-family: 'Roboto', sans-serif; 
+	font-weight: 200; 
+	text-align: left;
+	text-transform: uppercase;  
+  }
+}
+  
+  &__subtitulo{
+    	--tamanio{
+	font-size:30px;
+	color: black;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 200;
+	text-align: left;
+	text-transform: capitalize;}
+		}
+	}
+}
+
+
+  .txt__Izquierda--formato{
+	font-style: oblique;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	}
+		
+  .txt__Derecha--formato{
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	font-size: 100%;
+	text-align: justify;
+	}
+		
+	.txt__Centro--format{
+	text-align: center;
+	text-transform: capitalize;
+	line-height: 30px;
+	}
+
+	.article__publicidad--formato{
+		background-color: rgb(157, 157, 238);
+		position: fixed;
+		top: 200px;
+		color: white;
+		padding: 10px;
+		width: 40%;
+		z-index:+1;
+	}
+
+	.titulo__Table--formato{
+		color: rgb(233, 233, 240);
+		text-align: center;
+		font-size: 50px;
+		text-transform: uppercase;
+		}
+
+
+		$vista:mobile;
+h1{
+	@if $vista == mobile{
+	@media only screen and (max-width:768px){
+	color:$azul;
+	font-size:30px;}
+	}
+	@else if $vista == desktop{
+	@media only screen and (min-width:769px) and (max-width:1028px){
+	color:$verde;
+	font-size:45px;}
+	}
+	@else{
+	color:$amarillo;
+	font-size:25px;
+	}
+
+}
+
+@each $color in blue, yellow, black, white{
+	.#{$color}{
+	color:$color;
+	}
+}
+
+/*map-get*/
+$estilos: (
+  color: #a5b9dd,
+  centro: center
+);
+
+div {
+  background-color: map-get($estilos, color);
+  text-align: map-get($estilos, centro);
+  padding: 1rem;
+  color: white;
+}
+
+.boton{
+	width:100px;
+	background-color:white;
+	border-radius:20px;
+	text-align:center;
+	padding:10px;
+	border:1px solid black;
+	font-size:18px;
+	color:black;
+}
+
+.boton-enviar{
+	@extend .boton;
+	background-color:rgb(101, 101, 241);
+	color:white;
+}
+
+.boton-cancelar{
+	@extend .boton;
+	background-color:rgb(241, 66, 66);
+	color:rgb(235, 235, 93);
+}

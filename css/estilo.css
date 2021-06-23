@@ -1,0 +1,89 @@
+header {
+  background-color: #eebb5d;
+  position: sticky;
+  top: 0px;
+  padding: 30px 30px 10px 30px;
+  margin-bottom: 50px; }
+  header h3 {
+    color: #65658a;
+    font-size: 40px; }
+    header h3:hover {
+      color: #42b9b9; }
+
+section {
+  background-color: beige; }
+  section article {
+    font-size: 20px; }
+
+.article__seguinos--letra {
+  font-size: 40px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  text-transform: uppercase; }
+
+.article__subtitulo--tamanio {
+  font-size: 30px;
+  color: black;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 200;
+  text-align: left;
+  text-transform: capitalize; }
+
+.txt__Izquierda--formato {
+  font-style: oblique;
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px; }
+
+.txt__Derecha--formato {
+  font-weight: bold;
+  font-family: 'Roboto', sans-serif;
+  font-size: 100%;
+  text-align: justify; }
+
+.txt__Centro--format {
+  text-align: center;
+  text-transform: capitalize;
+  line-height: 30px; }
+
+.article__publicidad--formato {
+  background-color: #9d9dee;
+  position: fixed;
+  top: 200px;
+  color: white;
+  padding: 30px;
+  width: 30%;
+  z-index: +1; }
+
+.titulo__Table--formato {
+  color: #9d9dee;
+  text-align: center;
+  font-size: 50px;
+  text-transform: uppercase; }
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: flex-end;
+  height: 80px;
+  align-content: space-between; }
+
+footer {
+  background-color: #f0c688;
+  color: #8f7037;
+  padding: 50px 20px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around; }
+
+.footer__rrss--flex {
+  display: flex;
+  flex-direction: column;
+  font-size: 45px; }
+
+.footer__contacto--formato {
+  display: flex;
+  flex-direction: column; }

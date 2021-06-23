@@ -1,0 +1,60 @@
+$mediasQ:(
+mobile:768px,
+tablet:980px,
+desktop:1080px
+);
+
+@each $vista, $ancho in $mediasQ {
+	.#{$vista}{
+	@media only screen and (max-width:$ancho){
+	.container{
+	width:100%;
+	    }
+	  }
+	}
+}
+@mixin sizes($width, $height){
+	width:$width;
+	height:$height;
+}
+
+section article table{
+	@include sizes(100%,300px);
+	background-color:rgb(152, 152, 223);
+	color:white;
+}
+/* mixin */
+$tablet: 768;
+$large: 1024;
+$desktop: 1280;
+
+@mixin tablet {
+  @media only screen and (min-width: $tablet * 1px) {
+    @content;
+  }
+}
+
+@mixin large {
+  @media only screen and (min-width: $large * 1px) {
+    @content;
+  }
+}
+
+@mixin desktop {
+  @media only screen and (min-width: $desktop * 2px) {
+    @content;
+  }
+}
+
+/* ===== Usage ===== */
+h1 {
+  font-size: 20px;
+
+  @include tablet {
+    font-size: 15px;
+  }
+
+  @include desktop {
+    font-size: 30px;
+  }
+}
