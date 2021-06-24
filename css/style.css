@@ -24,9 +24,8 @@
 
 .imgFluid{
 	display: flex;
-	justify-content: flex-end;
-	width:10%;
-	height:1%;
+	justify-content: right;
+	width:20%;
 	
 }
 
