@@ -1,3 +1,36 @@
+.navbar {
+	background-image: linear-gradient(to right, white, rgb(234, 214, 236), rgb(195, 157, 229));
+	
+}
+.navbar-brand{
+	font-weight: bold;
+}
+
+.container-fluid{padding-left:0px;padding-right: 0px;
+}
+
+.modificandoFoo{
+	background-image: linear-gradient(to bottom, white, rgb(209, 186, 231), rgb(196, 160, 229));
+	padding:50px;
+	margin-top: 50px;
+	text-align: center;
+}
+.modificandoSlider{
+	margin-bottom: 50px;
+}
+
+.imgSlider{
+	width: 100%;
+	height: 10%;
+}
+
+
+.texto{
+	text-align: justify;
+}
+
+-------------------------------------------------------------------
+
 
 .contenedorGrid {
 	display: grid;
@@ -10,7 +43,7 @@
 	grid-template-rows: 100px 1fr 4fr 200px;
 	grid-column-gap: 10px;
 	grid-row-gap: 20px;
-	background-color: rgb(223, 220, 217);
+	background-color: rgb(219, 219, 243);
 }
 header{
 	grid-area: header;
@@ -40,6 +73,7 @@ footer{
     text-align: center;
 }
 }
+
 .ulFlex{
 	display: flex;
 	justify-content:flex-end;
@@ -51,6 +85,7 @@ font-size: 18px;
 position: relative;
 top: 10px;
 }
+
 
 
   ul ul {
@@ -65,59 +100,15 @@ top: 10px;
   }
 
 
-.imgFluid{width:100%;height: auto;}
 
-footer{
-	grid-area: footer;
-}
-.border{
-	border:1px solid black;
-	font-weight: bold;
-	font-size: 12px;
-}
 
-.footerFlex{
-	padding: 30px 5px;
-	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
-}
+.footerFlex{display: flex;justify-content: space-around;}
 
 .footerBG{
-		background-image: linear-gradient(to right, rgb(240, 234, 217), rgb(141, 138, 137));
+		background-image: linear-gradient(to right, white, blueviolet);
 	}
 
-	.flexFooter {
-		background-color: rgb(240, 198, 136);
-	    color:rgb(143, 112, 55);
-		padding: 50px 20px;
-		display: flex;
-		flex-direction: row;
-		flex-wrap: nowrap;
-		justify-content: space-around;
-	}
-	.flexRRSS {
-		display: flex;
-		flex-direction: row;
-	    font-size: 45px;
-	  
-	}
-	.imgRRSS{
-		width: 30%;
-		padding: 10px 0px;
-	}
-	.icoEmail{
-		order:3;
-	}
-	.icoWpp{
-		order: 1;
-	}
-	.icoTel{
-		order: 2;
-	}
-	
-	
+
 	.transform{
 		transform: translateX(-50px); 
 		transform: scale(-1,-1);
@@ -192,8 +183,14 @@ section#slider{
 section#texto{
 	grid-area: texto;
 }
-
-
+footer{
+	grid-area: footer;
+}
+.border{
+	border:1px solid black;
+	font-weight: bold;
+	font-size: 12px;
+}
 .ulFlex{
 	display: flex;
 	justify-content: flex-end;
@@ -203,7 +200,7 @@ padding: 10px;
 font-size: 18px;
 position: relative;
 top: 10px;}
-p{font-size: 25px; color: rgb(39, 41, 39);}
+p{font-size: 25px; color: rgb(39, 56, 39);}
 h6{font-size: 30px; color: black;}
 
 }
@@ -220,7 +217,7 @@ h6{font-size: 30px; color: black;}
 	grid-template-rows: 100px 1fr 4fr 200px;
 	grid-column-gap: 10px;
 	grid-row-gap: 20px;
-	background-color: rgb(196, 194, 190);
+	background-color: rgb(218, 183, 120);
 }
 header{
 	grid-area: header;
@@ -254,5 +251,5 @@ font-size: 18px;
 position: relative;
 top: 10px;}
 
-p{font-size: 25px; color: rgb(54, 54, 53);}
-h6{font-size: 50px; color: rgb(12, 12, 12);}
+p{font-size: 25px; color: rgb(121, 82, 9);}
+h6{font-size: 50px; color: rgb(94, 51, 3);}

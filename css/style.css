@@ -1,5 +1,5 @@
 .navbar {
-	background-image: linear-gradient(to right, white, rgb(234, 214, 236), rgb(195, 157, 229));
+	background-image: linear-gradient(to right, white, rgb(234, 214, 236), rgb(165, 144, 184));
 	
 }
 .navbar-brand{
@@ -10,7 +10,7 @@
 }
 
 .modificandoFoo{
-	background-image: linear-gradient(to bottom, white, rgb(209, 186, 231), rgb(196, 160, 229));
+	background-image: linear-gradient(to bottom, white, rgb(209, 193, 223), rgb(172, 155, 189));
 	padding:50px;
 	margin-top: 50px;
 	text-align: center;
@@ -26,7 +26,7 @@
 
 .imgFluid{
 	width:100%;
-	height:50%;	
+	height:80%;	
 	display: flex;
 	justify-content: flex-end;
 
@@ -112,7 +112,7 @@ top: 10px;
 .footerFlex{display: flex;justify-content: space-around;}
 
 .footerBG{
-		background-image: linear-gradient(to right, white, blueviolet);
+		background-image: linear-gradient(to right, white, rgb(74, 73, 75));
 	}
 
 
