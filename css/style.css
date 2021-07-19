@@ -6,6 +6,8 @@
 	font-weight: bold;
 }
 
+.container-fluid{padding-left:0px;padding-right: 0px;
+}
 
 .modificandoFoo{
 	background-image: linear-gradient(to bottom, white, rgb(209, 186, 231), rgb(196, 160, 229));
@@ -23,10 +25,11 @@
 }
 
 .imgFluid{
+	width:100%;
+	height:50%;	
 	display: flex;
-	justify-content: right;
-	width:20%;
-	
+	justify-content: flex-end;
+
 }
 
 .texto{
@@ -77,6 +80,7 @@ footer{
     text-align: center;
 }
 }
+
 .ulFlex{
 	display: flex;
 	justify-content:flex-end;
