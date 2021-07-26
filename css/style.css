@@ -36,7 +36,7 @@
 	text-align: justify;
 }
 
--------------------------------------------------------------------
+
 
 
 .contenedorGrid {
@@ -74,12 +74,7 @@ footer{
 	font-size: 25px;
 }
 
-.logo{
-	.titulo {
-    font-size: 24px;
-    text-align: center;
-}
-}
+
 
 .ulFlex{
 	display: flex;

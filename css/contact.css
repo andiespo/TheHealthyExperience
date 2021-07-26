@@ -25,7 +25,7 @@ font-size: 30px;
 .container-fluid{padding-left:0px;padding-right: 0px;
 }
 
-.modificandoFoo{
+.modificandoFooter{
 	background-image: linear-gradient(to bottom, white, rgb(209, 193, 223), rgb(172, 155, 189));
 	padding:50px;
 	margin-top: 50px;
@@ -33,7 +33,13 @@ font-size: 30px;
 }
 
 
--------------------------------------------------------------------
+.imgFluid{
+	width:40%;
+	height:40%;	
+	display: flex;
+	justify-content: left;
+
+}
 
 
 .contenedorGrid {
@@ -65,18 +71,8 @@ section#texto{
 footer{
 	grid-area: footer;
 }
-.border{
-	border:1px solid black;
-	font-weight: bold;
-	font-size: 25px;
-}
 
-.logo{
-	.titulo {
-    font-size: 24px;
-    text-align: center;
-}
-}
+
 
 .ulFlex{
 	display: flex;
@@ -103,12 +99,6 @@ top: 10px;
 
 
 
-
-.footerFlex{display: flex;justify-content: space-around;}
-
-.footerBG{
-		background-image: linear-gradient(to right, white, rgb(74, 73, 75));
-	}
 
 
 	.transform{
@@ -254,5 +244,7 @@ position: relative;
 top: 10px;}
 
 p{font-size: 25px; color: rgb(121, 82, 9);}
-h6{font-size: 50px; color: rgb(94, 51, 3);}
-
+h6 {
+  font-size : 50px; 
+  color: rgb(94, 51, 3);
+}
