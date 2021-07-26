@@ -1,52 +1,3 @@
-*{
-	margin: 0;
-}
-
-@font-face {
-font-family: 'Roboto';
-src: url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
-}   
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,300&display=swap');
-   
-body{
-font-size: 100%;
-}
-
-#titulo{
-color: rgb(66, 64, 63);
-}
-
-.tituloprincipal{
-color:  rgb(156, 153, 148);
-background-color: rgb(219, 216, 210);
-}
-
-.inicio{
-color:rgb(59, 56, 51);    
-font-size: 22px;
-}
-
-ul.sacarBulletEnlaces{
-list-style: none;
-}
-        
-ol{
-list-style: none;
-font-family: Roboto
-}
-
-.textoInformativo{
-color:rgb(173, 136, 65);
-background-color:rgb(252, 237, 210);
-font-size: 90%;
-}
-
-.tabla{
-color:rgb(173, 136, 65);
-font-size: 20px;
-}
-
 #contacto{
 font-size: 15px; 
 font-family: Arial, Helvetica, sans-serif;  
@@ -56,211 +7,252 @@ font-family: Arial, Helvetica, sans-serif;
 background-color:rgb(243, 235, 221);
 }
 
-.items{
-font-size: 20px;
-font-weight: bold;
-text-align: left;
-}   
+  
 
 .titulosecundario{
 color:rgb(117, 91, 41);
 font-size: 30px;
 }
 
-.footer{
-color: rgb(82, 57, 10);
+.navbar {
+	background-image: linear-gradient(to right, white, rgb(234, 214, 236), rgb(165, 144, 184));
+	
+}
+.navbar-brand{
+	font-weight: bold;
 }
 
-.txtIzquierda{
-font-style: oblique;
-font-family: 'Roboto', sans-serif;
-font-size: 25px;
+.container-fluid{padding-left:0px;padding-right: 0px;
 }
-    
-.txtDerecha{
-font-weight: bold;
-font-family: 'Roboto', sans-serif;
-font-size: 100%;
-text-align: justify;
-}
-    
-.txtCentro{
-text-align: center;
-text-transform: capitalize;
-line-height: 30px;
-}
-   
-.tituloTable{
-color: rgb(157, 157, 238);
-text-align: center;
-font-size: 50px;
-text-transform: uppercase;
-}
-    
-.parallax {
-    
-/* The image used */
 
-background-image: url("../assets/img/brooke-lark-_v3fy536vpk-unsplash.jpg");
-    
-/* Set a specific height */
-    
-height: 300px;
-    
-/* Create the parallax scrolling effect */
-    
-background-attachment: fixed;
-    
-background-position: center;
-    
-background-repeat: no-repeat;
-    
-background-size: cover;
-
-             
-/* box modeling */
-padding: 50px 30px;
-margin-bottom:50px;
-z-index: 999999999;
+.modificandoFoo{
+	background-image: linear-gradient(to bottom, white, rgb(209, 193, 223), rgb(172, 155, 189));
+	padding:50px;
+	margin-top: 50px;
+	text-align: center;
 }
 
 
-.Seguinos{
-  font-size: 40px;
-  color: black; 
-  font-family: 'Roboto', sans-serif; 
-  font-weight: 200; 
-  text-align: left;
-  text-transform: uppercase;  
-}
+-------------------------------------------------------------------
 
-.Subtitulo{
-  font-size:30px;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: 200;
-  text-align: left;
-  text-transform: capitalize;
-}
 
-.parrafo {
-  font-size: 20px;
-  color: black;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  text-align: justify;
+.contenedorGrid {
+	display: grid;
+	grid-template-areas: 
+	"header nav nav"
+	"slider slider slider"
+	"texto texto texto"
+	"footer footer footer";
+	grid-template-columns: 100% 20% 60%;
+	grid-template-rows: 100px 1fr 4fr 200px;
+	grid-column-gap: 50px;
+	grid-row-gap: 20px;
+	background-color: rgb(219, 219, 243);
 }
-
-.solucionandoOverflow {
-  font-size: 30px;
-  line-height: 40px;
-  background-color: rgb(216, 213, 208);
-  border:1.5px solid black;
-  width: 90px;
-  height: 80px;
-  padding: 8px;
-  overflow: visible;
-}
-
-.tamanioImg {
-  width: 100%;
-}
-
-.encabezadoUbicacion{
-  font-size: 40px;
-  text-align: center;
-  padding: 0px 50px;
-  font-family: 'Roboto', sans-serif;
-  border-top: 3px dashed blueviolet;
-  border-bottom: solid 3px blueviolet;
-  border-left: groove 3px blueviolet;
-  border-right: dashed 3px blueviolet;
-}
-
 header{
-  position: sticky;
-  top: 0px;
-  background-color: rgb(201, 199, 194); 
-  padding: 30px 30px 10px 30px;
-  margin-bottom: 50px;
-}
-
-ul {
-  list-style: none;
-  font-size:0 
-}
-li {
-  display: inline-block;
-  width: 8%;
-  position:relative;
-  font-size: 20px
-}
-ul ul {
-  position: absolute;
-  display: none;
-}
-ul ul li {
-  display: block;
-}
-ul li:hover ul {
-  display:block;
-}
-
-table{
-  margin-bottom: 40px;
-  top: 300px;
-}
-
-
-.publicidad{
-  background-color: rgb(157, 157, 238);
-  position: fixed;
-  top: 200px;
-  color: white;
-  padding: 30px;
-  width: 30%;
-  z-index:+1;
-}
-
-.flexNav{
-	    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: flex-end;
-    height: 80px;
-    align-content: space-between;
-}
-
-.flexFooter {
-	background-color: rgb(240, 198, 136);
-  color:rgb(143, 112, 55);
-	padding: 50px 20px;
+	grid-area: header;
 	display: flex;
-	flex-direction: row;
-	flex-wrap: nowrap;
-	justify-content: space-around;
 }
-.flexRRSS {
-	display: flex;
-	flex-direction: column;
-  font-size: 45px;
-  
+nav{
+	grid-area: nav;
 }
-.imgRRSS{
-	width: 30%;
-	padding: 10px 0px;
+section#slider{
+	grid-area: slider;
 }
-.icoEmail{
-	order:3;
+section#texto{
+	grid-area: texto;
 }
-.icoWpp{
-	order: 1;
+footer{
+	grid-area: footer;
 }
-.icoTel{
-	order: 2;
+.border{
+	border:1px solid black;
+	font-weight: bold;
+	font-size: 25px;
 }
 
-.contactoFooter {
-	display: flex;
-	flex-direction: column;
+.logo{
+	.titulo {
+    font-size: 24px;
+    text-align: center;
 }
+}
+
+.ulFlex{
+	display: flex;
+	justify-content:flex-end;
+	font-weight: bold;
+}
+li{list-style-type: none;
+padding: 10px;
+font-size: 18px;
+position: relative;
+top: 10px;
+}
+
+  ul ul {
+	position: absolute;
+	display: none;
+  }
+  ul ul li {
+	display: block;
+  }
+  ul li:hover ul {
+	display:block;
+  }
+
+
+
+
+.footerFlex{display: flex;justify-content: space-around;}
+
+.footerBG{
+		background-image: linear-gradient(to right, white, rgb(74, 73, 75));
+	}
+
+
+	.transform{
+		transform: translateX(-50px); 
+		transform: scale(-1,-1);
+	}
+	
+	.iconFlex{
+		display: flex;
+		justify-content: space-around;
+		padding-top: 50px;
+	}
+	.iconModi{
+		width: 50px;
+		height: 50px;
+	}
+	.transition{
+		transition: all 1s;
+	}
+	.transition:hover{
+		transform: translateY(-20px);
+	}
+	input {
+		display: block;
+		font-size: 18px;
+		width: 100px;
+		transition: all 1s;
+		height: 50px;
+	}
+	input:focus{
+		font-size: 30px;
+		width: 20%;
+	}
+	@keyframes movimiento {
+		0%{transform:translateY(-20px);}
+		50%{transform:translateX(20px);}
+		100%{transform: translate(0px, 0px);}
+	}
+	
+	.animacion{
+		animation-name: movimiento;
+		animation-duration: 2s;
+		animation-iteration-count: 2;
+	}
+
+
+p{font-size: 18px; color: rgb(151, 151, 150);}
+h6{font-size: 25px; color:rgb(121, 121, 119);}
+
+
+@media only screen and (max-width: 768px){
+	.contenedorGrid {
+	display: grid;
+	grid-template-areas: 
+	"header nav nav"
+	"slider slider slider"
+	"texto texto texto"
+	"footer footer footer";
+	grid-template-columns: 19% 20% 60%;
+	grid-template-rows: 100px 1fr 4fr 200px;
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+	background-color: rgb(219, 219, 243);
+}
+header{
+	grid-area: header;
+}
+nav{
+	grid-area: nav;
+}
+section#slider{
+	grid-area: slider;
+}
+section#texto{
+	grid-area: texto;
+}
+footer{
+	grid-area: footer;
+}
+.border{
+	border:1px solid black;
+	font-weight: bold;
+	font-size: 12px;
+}
+.ulFlex{
+	display: flex;
+	justify-content: flex-end;
+}
+li{list-style-type: none;
+padding: 10px;
+font-size: 18px;
+position: relative;
+top: 10px;}
+p{font-size: 25px; color: rgb(39, 56, 39);}
+h6{font-size: 30px; color: black;}
+
+}
+
+@media only screen and (min-width:769px ) and (max-width: 1100px){
+	.contenedorGrid {
+	display: grid;
+	grid-template-areas: 
+	"header nav nav"
+	"slider slider slider"
+	"texto texto texto"
+	"footer footer footer";
+	grid-template-columns: 19% 20% 60%;
+	grid-template-rows: 100px 1fr 4fr 200px;
+	grid-column-gap: 10px;
+	grid-row-gap: 20px;
+	background-color: rgb(218, 183, 120);
+}
+header{
+	grid-area: header;
+}
+nav{
+	grid-area: nav;
+}
+section#slider{
+	grid-area: slider;
+}
+section#texto{
+	grid-area: texto;
+}
+footer{
+	grid-area: footer;
+}
+.border{
+	border:1px solid black;
+	font-weight: bold;
+	font-size: 25px;
+}
+.ulFlex{
+	display: flex;
+	justify-content: flex-end;
+}
+
+li{
+list-style-type: none;
+padding: 10px;
+font-size: 18px;
+position: relative;
+top: 10px;}
+
+p{font-size: 25px; color: rgb(121, 82, 9);}
+h6{font-size: 50px; color: rgb(94, 51, 3);}
+

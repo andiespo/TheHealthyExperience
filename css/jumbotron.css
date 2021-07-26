@@ -28,6 +28,18 @@ body {
     justify-content: center;
   }
 
-  .footer{
+  
+  .modificandoFooter{
+    background-image: linear-gradient(to bottom, white, rgb(209, 193, 223), rgb(172, 155, 189));
+    padding:50px;
+    margin-top: 50px;
     text-align: center;
+  }
+
+  .navbar {
+    background-image: linear-gradient(to right, white, rgb(234, 214, 236), rgb(165, 144, 184));
+    
+  }
+  .navbar-brand{
+    font-weight: bold;
   }
